@@ -1,0 +1,93 @@
+/* Home.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navigation Bar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Set the background color to white */
+    padding: 15px 20px; /* Adjust the padding to increase the height */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0.8); /* Add a box-shadow */
+  }
+
+ .navbar-left img {
+    margin-top: 5px;
+    margin-left: 45px;
+   height: 35px;
+}
+  
+.navbar-right a {
+    color: #000; /* Change the text color to black (or any other color that provides good contrast) */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold; /* Make the text bold */
+  }
+  .navbar-right a + a {
+    margin-left: 50px;
+    margin-right: 70px;
+  }
+
+  .menu-button{
+    display: none;
+  }
+
+/* Home.css */
+/* ... (existing styles) */
+
+/* Hide desktop navigation links on mobile */
+@media screen and (max-width: 600px) {
+    .special{
+      display: none;
+    }
+  
+    /* Show hamburger menu button */
+    .menu-button {
+        display: block;
+        padding: 10px;
+        color: #333;
+        
+      }
+      .menu-button:hover {
+        color: #555; /* Adjust the hover color as needed */
+      }
+      .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 85px; /* Adjust this value based on your design */
+        right: 0;
+        background-color: #fff; /* Adjust the background color as needed */
+        border: 1px solid #ccc; /* Add a border for better visibility */
+        z-index: 1000;
+      }
+      .mobile-menu a {
+        padding: 10px;
+        text-decoration: none;
+        color: #333; /* Adjust the text color as needed */
+      }
+      
+      .menu-button.open {
+        /* Styles for the open state of the hamburger menu button */
+        color: #555; /* Adjust the open state color as needed */
+      }
+
+      .menu-button.open .bar {
+        /* Styles for the open state of each bar in the hamburger icon */
+        background-color: #555; /* Adjust the open state color as needed */
+      }
+
+      .menu-button .bar {
+        /* Styles for each bar in the hamburger icon */
+        height: 3px;
+        width: 25px;
+        background-color: #333; /* Adjust the bar color as needed */
+        margin: 5px 0;
+        transition: 0.4s;
+      }
+  }
+  

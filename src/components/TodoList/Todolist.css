@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .add-task-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-task-container input {
+    
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .add-task-container button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .task span {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  
+  .task button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task.completed {
+    background-color: #e2f0d9;
+    text-decoration: line-through;
+  }
+  
+  .task.completed button {
+    background-color: #6c757d;
+  }
+  
+  /* Add this style to the existing CSS file */
+
+.added-to-cart {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    width: 10px !important;
+    color: #155724;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .added-to-cart:hover {
+    background-color: #c3e6cb;
+  }
+
+  
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #e2f0d9;
+  }
+  .cart-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  
+.cart-item button:hover {
+    background-color: #c82333;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6c757d;
+  }
